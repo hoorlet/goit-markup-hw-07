@@ -1,0 +1,38 @@
+.pecul-list {
+  display: flex;
+}
+.pecul-title {
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.pecul-tumba {
+  background-color: var(--icon-color);
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pecul-icons {
+  width: 70px;
+  height: 70px;
+}
+.pecul-item:not(:last-child) {
+  margin-right: 30px;
+}
+.pecul-title {
+  box-sizing: content-box;
+  margin-bottom: 10px;
+}
+.feature-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 36px;
+}
+.feature {
+  display: flex;
+}
+.feature-item:not(:last-child) {
+  margin-right: 30px;
+}

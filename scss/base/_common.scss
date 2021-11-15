@@ -1,0 +1,72 @@
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  background-color: #fff;
+  color: var(--primary-text-color);
+}
+address {
+  font-style: normal;
+  margin-top: 20px;
+}
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+footer {
+  background-color: #2f303a;
+  padding: 60px 0;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-feature {
+  padding-top: 0;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 36px;
+}
+.section-team {
+  background: #f5f4fa;
+}
+.container-header {
+  display: flex;
+  align-items: center;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container-footer {
+  display: flex;
+  align-items: baseline;
+}
+.title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
