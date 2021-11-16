@@ -92,12 +92,12 @@
   box-sizing: border-box;
   border-radius: 4px;
   resize: none;
-}
-.modal-form-massage::placeholder {
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  &::placeholder {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 .modal-form-field:focus-within .modal-form-input {
   outline: none;

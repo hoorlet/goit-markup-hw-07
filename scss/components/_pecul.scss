@@ -2,6 +2,8 @@
   display: flex;
 }
 .pecul-title {
+  box-sizing: content-box;
+  margin-bottom: 10px;
   text-transform: uppercase;
   color: var(--title-text-color);
 }
@@ -18,13 +20,6 @@
   width: 70px;
   height: 70px;
 }
-.pecul-item:not(:last-child) {
-  margin-right: 30px;
-}
-.pecul-title {
-  box-sizing: content-box;
-  margin-bottom: 10px;
-}
 .feature-title {
   text-align: center;
   margin-bottom: 50px;
@@ -35,4 +30,7 @@
 }
 .feature-item:not(:last-child) {
   margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
