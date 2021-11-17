@@ -1,7 +1,21 @@
-.job-item-thumb {
+.job__title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 36px;
+}
+.job {
+  display: flex;
+}
+.job__item:not(:last-child) {
+  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.job__thumb {
   position: relative;
 }
-.job-animation {
+.job__animation {
   display: flex;
   font-weight: 700;
   line-height: 1.14px;
@@ -13,6 +27,6 @@
   left: 0;
   right: 0;
   height: 70px;
-  color: #ffffff;
+  color: $color-white;
   background: rgba(47, 48, 58, 0.8);
 }

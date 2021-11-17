@@ -1,14 +1,14 @@
-.pecul-list {
+.pecul__list {
   display: flex;
 }
-.pecul-title {
+.pecul__title {
   box-sizing: content-box;
   margin-bottom: 10px;
   text-transform: uppercase;
-  color: var(--title-text-color);
+  color: $color-black;
 }
-.pecul-tumba {
-  background-color: var(--icon-color);
+.pecul__tumba {
+  background-color: $color-white;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -16,21 +16,7 @@
   align-items: center;
   justify-content: center;
 }
-.pecul-icons {
+.pecul__icons {
   width: 70px;
   height: 70px;
-}
-.feature-title {
-  text-align: center;
-  margin-bottom: 50px;
-  font-size: 36px;
-}
-.feature {
-  display: flex;
-}
-.feature-item:not(:last-child) {
-  margin-right: 30px;
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
 }

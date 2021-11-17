@@ -1,7 +1,8 @@
-:root {
-  --primary-text-color: #757575;
-  --title-text-color: #212121;
-  --white-text-color: #fff;
-  --accent-text-color: #2196f3;
-  --icon-color: #f5f4fa;
-}
+$color-black: #212121;
+$color-gray: #757575;
+$color-blue: #2196f3;
+$color-background-light: #f5f4fa;
+$color-white: #fff;
+$color-background-dark: #2f303a;
+$trans-duration: 250ms;
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);

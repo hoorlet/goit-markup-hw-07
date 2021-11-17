@@ -1,56 +1,56 @@
-.portfolio-list {
+.portfolio__list {
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
-.portfolio-item {
+.portfolio__item {
   position: relative;
   &:nth-child(-n + 6) {
     margin-bottom: 30px;
   }
 }
-.portfolio-link {
+.portfolio__link {
   display: block;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow $trans-duration $timing-function;
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
-.portfolio-tumba {
+.portfolio__tumba {
   margin-top: -5px;
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
-  background: #ffffff;
+  background: $color-white;
 }
-.portfolio-title {
+.portfolio__title {
   font-weight: bold;
   font-size: 17px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--title-text-color);
+  color: $color-black;
 }
-.portfolio-text {
-  color: var(--primary-text-color);
+.portfolio__text {
+  color: $color-gray;
   font-weight: 400;
   margin-top: 4px;
   font-size: 16px;
   line-height: 1.87;
 }
-.portfolio-hover {
+.portfolio__hover {
   position: relative;
   overflow: hidden;
 }
-.hover-text {
+.hover__text {
   position: absolute;
   bottom: 0;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform $trans-duration $timing-function;
   width: 100%;
   height: 100%;
   padding: 63px 24px;
@@ -58,9 +58,9 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 1.56;
-  color: #ffffff;
+  color: $color-white;
 }
-.portfolio-link:hover .hover-text,
-.portfolio-link:focus .hover-text {
+.portfolio__link:hover .hover__text,
+.portfolio__link:focus .hover__text {
   transform: translateY(0);
 }

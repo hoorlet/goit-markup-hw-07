@@ -6,13 +6,13 @@
 .nav {
   margin-left: 93px;
 }
-.nav-list {
+.nav__list {
   display: flex;
 }
-.nav-item:not(:last-child) {
+.nav__item:not(:last-child) {
   margin-right: 50px;
 }
-.nav-link {
+.nav__link {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -25,15 +25,15 @@
   padding-top: 32px;
   padding-bottom: 32px;
   height: 100%;
-  color: var(--title-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: $color-black;
+  transition: color $trans-duration $timing-function;
   &:hover,
   &:focus {
-    color: var(--accent-text-color);
+    color: $color-blue;
   }
 }
-.nav-link-active {
-  color: var(--accent-text-color);
+.nav__link--active {
+  color: $color-blue;
   padding-top: 32px;
   padding-bottom: 32px;
   &::after {
@@ -45,35 +45,35 @@
     width: 100%;
     bottom: -3px;
     left: 0;
-    background: var(--accent-text-color);
+    background: $color-blue;
   }
 }
-.cont-list {
+.cont__list {
   display: flex;
   margin-left: auto;
 }
-.cont-item:not(:last-child) {
+.cont__item:not(:last-child) {
   margin-right: 50px;
 }
-.cont-link {
+.cont__link {
   display: flex;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: $color-gray;
+  transition: color $trans-duration $timing-function;
   &:hover,
   &:focus {
-    color: var(--accent-text-color);
+    color: $color-blue;
   }
 }
-.cont-icon {
+.cont__icon {
   margin-right: 10px;
-  fill: var(--primary-text-color);
+  fill: $color-gray;
 }
-.cont-link:hover .cont-icon {
-  fill: var(--accent-text-color);
+.cont__link:hover .cont__icon {
+  fill: $color-blue;
 }
-.cont-link:focus .cont-icon {
-  fill: var(--accent-text-color);
+.cont__link:focus .cont__icon {
+  fill: $color-blue;
 }

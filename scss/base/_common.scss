@@ -3,8 +3,8 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  background-color: #fff;
-  color: var(--primary-text-color);
+  background-color: $color-white;
+  color: $color-gray;
 }
 address {
   font-style: normal;
@@ -38,18 +38,18 @@ footer {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section-feature {
+.section__job {
   padding-top: 0;
 }
-.section-title {
+.section__title {
   text-align: center;
   margin-bottom: 50px;
   font-size: 36px;
 }
-.section-team {
-  background: #f5f4fa;
+.section__team {
+  background: $color-background-light;
 }
-.container-header {
+.container__header {
   display: flex;
   align-items: center;
 }
@@ -58,7 +58,7 @@ footer {
   padding: 0 15px;
   margin: 0 auto;
 }
-.container-footer {
+.container__footer {
   display: flex;
   align-items: baseline;
 }
@@ -68,5 +68,5 @@ footer {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
+  color: $color-black;
 }

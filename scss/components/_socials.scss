@@ -1,33 +1,39 @@
-.team-socials-list {
+.socials {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 16px;
 }
-.button-icons {
+
+.socials__item {
   padding: 0;
   border: none;
-  background-color: #fff;
+  background-color: $color-white;
   align-items: center;
   &:not(:last-child) {
     margin-right: 10px;
   }
 }
-.team-social-link {
+
+.social__link {
   display: flex;
   width: 44px;
   height: 44px;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  fill: #afb1b8;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color $trans-duration $timing-function;
   &:hover,
   &:focus {
-    background-color: var(--accent-text-color);
-    fill: #fff;
+    background-color: $color-blue;
   }
 }
+
 .icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #afb1b8;
+  transition: fill $trans-duration $timing-function;
+  .social__link:hover &,
+  .social__link:focus & {
+    fill: $color-white;
+  }
 }
